@@ -176,8 +176,8 @@
 
 <script>
 /* ====== CONFIG (EDIT THESE TWO LINES) ====== */
-const scriptURL = 'YOUR_WEB_APP_URL_HERE'; // <-- PASTE your Apps Script Web App URL here
-const INSTITUTION_PHONE = '917620085231';  // <-- WhatsApp number in international format (no + sign)
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxiCovOGK31Y204AiAqKg3_rah8dEf6PWJ-q15EKKntQdmdur8A6xJl3OtqeqrxTHWD/exec'; // 
+const INSTITUTION_PHONE = '917620085231';  // 
 /* ====== END CONFIG ====== */
 
 const form = document.getElementById('assessmentForm');
@@ -185,7 +185,7 @@ const submitBtn = document.getElementById('submitBtn');
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  if (!scriptURL || scriptURL.includes('YOUR_WEB_APP_URL_HERE')) {
+  if (!scriptURL || scriptURL.includes('https://script.google.com/macros/s/AKfycbxiCovOGK31Y204AiAqKg3_rah8dEf6PWJ-q15EKKntQdmdur8A6xJl3OtqeqrxTHWD/exec')) {
     alert('Configuration error: Please edit the file and paste your Apps Script Web App URL.');
     return;
   }
@@ -234,4 +234,5 @@ form.addEventListener('submit', function (e) {
 </script>
 
 </body>
+
 </html>
